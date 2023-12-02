@@ -77,11 +77,7 @@ section > p {
   background: #580fce;
   box-shadow: 0 1rem 0.6rem rgba(12, 3, 27, 0.15);
 }
- 
 
- nav .nav_hide{
-     display: none;
-} 
 /*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/
 @media screen and (max-width: 1024px) {
   .container {
@@ -107,6 +103,7 @@ nav {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
   box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
+  /*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/
 }
 nav h1, nav h2, nav h3, nav h4, nav h5 {
   color: #ffffff;
@@ -129,8 +126,12 @@ nav .container a {
 nav .container .nav__logo .h3 {
   color: #ffffff;
 }
+@media screen and (min-width: 1024px) {
+  nav nav .container button {
+    display: none !important;
+  }
+}
 
-/*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/
 @media screen and (max-width: 1024px) {
   nav .container button {
     display: inline-block;

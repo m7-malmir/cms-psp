@@ -4,30 +4,30 @@ const closeNavBtn=document.querySelector('#close__nav-btn');
 
 
     
-        if ((screen.width<1024)) {
-            openNavBtn.style.display ='inline-block';
-            closeNavBtn.style.display =''; 
-        }
+        // if ((screen.width<1024)) {
+        //     openNavBtn.style.display ='inline-block';
+        //     closeNavBtn.style.display =''; 
+        // }
         // else{
 
  
    
-        //     openNavBtn.addEventListener('click',()=>{
-        //         navItem.style.display='flex';
-        //         openNavBtn.style.display='none';
-        //         closeNavBtn.style.display='inline-block';
+            openNavBtn.addEventListener('click',()=>{
+                navItem.style.display='flex';
+                openNavBtn.style.display='none';
+                closeNavBtn.style.display='inline-block';
                 
                 
-        //     });
+            });
     
     
-        //     closeNavBtn.addEventListener('click',()=>{
-        //         navItem.style.display='none';
-        //         openNavBtn.style.display='inline-block';
-        //         closeNavBtn.style.display='none';
+            closeNavBtn.addEventListener('click',()=>{
+                navItem.style.display='none';
+                openNavBtn.style.display='inline-block';
+                closeNavBtn.style.display='none';
                
-        //     });
-        // }
+            });
+        
 
 
 //CLOSE NAV MENU 

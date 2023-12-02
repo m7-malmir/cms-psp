@@ -30,6 +30,17 @@ nav{
 
 }
 /*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/
+@media screen and (min-width:1024px){
+    nav{
+        .container{
+        button{
+            display: none!important;
+        }
+     }
+    }
+}
+   
+}
 @media screen and (max-width: 1024px){
     nav{
         .container{
