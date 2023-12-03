@@ -18,9 +18,7 @@ body {
   line-height: 1.5rem;
   color: rgba(12, 3, 27, 0.7);
   background: rgba(76, 201, 240, 0.1);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   height: 100%;
 }
 
@@ -48,7 +46,6 @@ section > p {
 
 .btn {
   display: inline-block;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
@@ -64,7 +61,6 @@ section > p {
 
 .btn-primary {
   display: inline-block;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
@@ -93,40 +89,6 @@ section > p {
     width: 90%;
   }
 }
-nav {
-  width: 100vw;
-  height: 5rem;
-  position: fixed;
-  z-index: 10;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #480ca8, #4cc9f0);
-  color: #ffffff;
-  box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
-  /*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/
-}
-nav h1, nav h2, nav h3, nav h4, nav h5 {
-  color: #ffffff;
-}
-nav .container {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-nav .container ul {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-}
-nav .container a {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-nav .container .nav__logo .h3 {
-  color: #ffffff;
-}
-
 header {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
@@ -197,7 +159,6 @@ header .container .header__content p {
   border-radius: 1rem;
   display: flex;
   gap: 1.5rem;
-  height: -moz-fit-content;
   height: fit-content;
   transition: all 400ms ease;
 }
@@ -396,7 +357,6 @@ header .container .header__content p {
   padding: 0.8rem;
   border-radius: 50%;
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
   font-size: 1.2rem;
 }
@@ -418,9 +378,7 @@ header .container .header__content p {
   width: 100%;
   border-radius: 0.4rem;
   resize: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 /*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/

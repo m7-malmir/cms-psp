@@ -8,12 +8,11 @@ nav{
     @include gradientBackground;
     box-shadow: 0 1rem 1rem rgb($black-color, 0.1);
    
-       
     .container{
         justify-content: space-between;
         display: flex;
         align-items: center;
-
+       
         ul{
             display: flex;
             gap: 3rem;
@@ -28,6 +27,7 @@ nav{
             color:$white-color;
         }
 
+    }
 }
 /*==================================MEDIA QUERY (MEDIUM DEVICES)==========================================*/
 @media screen and (min-width:1024px){
@@ -36,11 +36,14 @@ nav{
         button{
             display: none!important;
         }
+        #nav__items{
+            display: flex!important;
+        }
      }
     }
 }
-   
-}
+
+
 @media screen and (max-width: 1024px){
     nav{
         .container{
@@ -51,6 +54,9 @@ nav{
             font-size: 2rem;
             cursor: pointer;
 
+            &#close__nav-btn{
+                display:none;
+            }
             }
         ul{
             position: fixed;
@@ -106,4 +112,4 @@ nav{
     
         }
     }
-}
+ }
